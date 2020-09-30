@@ -5,8 +5,9 @@ import java.io.*;
 
 public class Program {
     public static void main(String[] args) throws IOException {
-        File dir = new File("C:/Java_42_t/1/Person");
-        File file = new File("C:/Java_42_t/1/Person/Per.txt");
+        String path = "C:/Java_42_t/1/";
+        File dir = new File(path + "Person");
+        File file = new File(dir+ "/Per.txt");
         dir.mkdir();
         file.createNewFile();
 
